@@ -7,6 +7,12 @@
 	<title>Верстка сайта</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="modal/style.css">
+	<link rel="stylesheet" href="arcticmodal/themes/simple.css">
+	<link rel="stylesheet" href="arcticmodal/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,14 +25,14 @@
 	<header id="header" class="header">
 		<div class="container">
 			<div class="row main-head">
-				<div class="col-lg-6 logo">
+				<div class="col-xs-6 logo">
 					<div class="logo-borger">
 						<p class="logo-text">
 							<span class="logo-color">S</span>mart
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-6 hamburger">
+				<div class="col-xs-6 hamburger">
 					<button>
 						<span class="hamburger-nav"></span>
 					</button>
@@ -43,8 +49,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="main-form">
+				<div class="col">
+					<div class="main-form wow fadeInLeft">
 						<p>
 							<span>Send</span> A Message
 						</p>
@@ -75,8 +81,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
-					<div class="process-box box-tomi">
+				<div class="col-md-3 col-sm-6">
+					<div class="process-box box-tomi wow fadeInDown">
 						<i class="fa fa-magnet"></i>
 						<h3>
 							Koc Koi Tomi
@@ -84,13 +90,13 @@
 						<p>
 							Lorem ipsum is dummy lorem very dumy
 						</p>
-						<button>
+						<button class="process-popup1">
 							<span class="btn-plus"></span>Know More
 						</button>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="process-box box-koimona">
+				<div class="col-md-3 col-sm-6">
+					<div class="process-box box-koimona wow fadeInUp">
 						<i class="fa fa-bug"></i>
 						<h3>
 							Koimona Set
@@ -98,13 +104,13 @@
 						<p>
 							Lorem ipsum is dummy you   lorem very dumyL is 
 						</p>
-						<button>
+						<button class="process-popup2">
 							<span class="btn-plus"></span>Know More
 						</button>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="process-box box-setting">
+				<div class="col-md-3 col-sm-6">
+					<div class="process-box box-setting wow fadeInDown">
 						<i class="fa fa-cogs"></i>
 						<h3>
 							Setting Koire
@@ -112,13 +118,13 @@
 						<p>
 							Lorem ipsum is dummy lorem very yLorem ipsus 
 						</p>
-						<button>
+						<button class="process-popup3">
 							<span class="btn-plus"></span>Know More
 						</button>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="process-box box-lara">
+				<div class="col-md-3 col-sm-6">
+					<div class="process-box box-lara wow fadeInUp">
 						<i class="fa fa-camera-retro"></i>
 						<h3>
 							Ko Image Lara
@@ -126,7 +132,7 @@
 						<p>
 							Lorem ipsum is dummy ry dumyLorem ipsum is 
 						</p>
-						<button>
+						<button class="process-popup4">
 							<span class="btn-plus"></span>Know More
 						</button>
 					</div>
@@ -148,122 +154,118 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="0.5s">
 						<img src="img/works-1.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №1
 							</p>
-							<button>
+							<button class="work-popup1">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="1s">
 						<img src="img/works-2.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №2
 							</p>
-							<button>
+							<button class="work-popup2">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="1.5s">
 						<img src="img/works-3.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №3
 							</p>
-							<button>
+							<button class="work-popup3">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="2s">
 						<img src="img/works-4.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №4
 							</p>
-							<button>
+							<button class="work-popup4">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="2.5s">
 						<img src="img/works-5.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №5
 							</p>
-							<button>
+							<button class="work-popup5">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="3s">
 						<img src="img/works-6.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №6
 							</p>
-							<button>
+							<button class="work-popup6">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="3.5s">
 						<img src="img/works-7.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №7
 							</p>
-							<button>
+							<button class="work-popup7">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="4s">
 						<img src="img/works-8.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №8
 							</p>
-							<button>
+							<button class="work-popup8">
 								Visit Gallery
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="works-box">
+				<div class="col-md-4">
+					<div class="works-box wow pulse" data-wow-delay="4.5s">
 						<img src="img/works-9.jpg" alt="Наша работа">
 						<div class="signature">
 							<p>
 								Work №9
 							</p>
-							<button>
+							<button class="work-popup9">
 								Visit Gallery
 							</button>
 						</div>
@@ -305,7 +307,7 @@
 				<div class="col-lg-10">
 					<div class="services-info tab-content">
 						<div id="app" role="tabpanel" class="row fade in tab-pane active">
-							<div class="col-lg-8">
+							<div class="col-md-8">
 								<h4>
 									Modern App Design
 								</h4>
@@ -316,16 +318,16 @@
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
 								</p>
-								<button class="services-btn">
+								<button class="services-popup1 services-btn">
 									<span class="btn-plus"></span>Know More
 								</button>
 							</div>
-							<div class="col-lg-4">
-								<img class="img-responsive" src="img/i-watch.png" alt="Часы">
+							<div class="col-md-4">
+								<img class="img-responsive wow bounceInRight" src="img/i-watch.png" alt="Часы">
 							</div>
 						</div>
 						<div id="global" role="tabpanel" class="row fade tab-pane">
-							<div class="col-lg-8">
+							<div class="col-md-8">
 								<h4>
 									Modern App Design 2
 								</h4>
@@ -336,16 +338,16 @@
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
 								</p>
-								<button class="services-btn">
+								<button class=" services-popup2 services-btn">
 									<span class="btn-plus"></span>Know More
 								</button>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-md-4">
 								<img class="img-responsive" src="img/i-mak.png" alt="Часы">
 							</div>
 						</div>
 						<div id="web" role="tabpanel" class="row fade tab-pane">
-							<div class="col-lg-8">
+							<div class="col-md-8">
 								<h4>
 									Modern App Design 3
 								</h4>
@@ -356,16 +358,16 @@
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
 								</p>
-								<button class="services-btn">
+								<button class="services-popup3 services-btn">
 									<span class="btn-plus"></span>Know More
 								</button>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-md-4">
 								<img class="img-responsive" src="img/i-pad.png" alt="Часы">
 							</div>
 						</div>
 						<div id="play" role="tabpanel" class="row fade tab-pane">
-							<div class="col-lg-8">
+							<div class="col-md-8">
 								<h4>
 									Modern App Design 4
 								</h4>
@@ -376,11 +378,11 @@
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.
 								</p>
-								<button class="services-btn">
+								<button class="services-popup4 services-btn">
 									<span class="btn-plus"></span>Know More
 								</button>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-md-4">
 								<img class="img-responsive" src="img/i-phone.png" alt="Часы">
 							</div>
 						</div>
@@ -449,8 +451,333 @@
 		</div> <!-- cont -->
 	</section>
 
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	 <script src="https://kit.fontawesome.com/16b4bb9bff.js" crossorigin="anonymous"></script>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col section-head text-center">
+					<h2>
+						<span>Team</span> Chinen & Skills
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+					</p>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!-- Reviews -->
+	<section id="reviews" class="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col section-head text-center">
+					<h2>
+						<span>Clients</span> Said
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+					</p>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="reviews-slider">
+					<div class="reviews-slider-item text-center">
+						<img class="img-circle center-block" src="img/avatar-1.jpg" alt="Angelina">
+						<div class="reviews-slider-shadow">
+							<p class="reviews-slider-text">
+								“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+							</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<p class="reviews-slider-author">
+							  	<b>Kita Say</b>, HK Director
+							</p>
+						</div>	
+					</div>
+					<div class="reviews-slider-item text-center">
+						<img class="img-circle center-block" src="img/avatar-2.jpg" alt="Brad">
+						<div class="reviews-slider-shadow">
+							<p class="reviews-slider-text">
+								“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+							</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<p class="reviews-slider-author">
+							  	<b>Kita Say</b>, HK Director
+							</p>
+						</div>	
+					</div>
+					<div class="reviews-slider-item text-center">
+						<img class="img-circle center-block" src="img/avatar-3.jpg" alt="Ьarie">
+						<div class="reviews-slider-shadow">
+							<p class="reviews-slider-text">
+								“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+							</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<p class="reviews-slider-author">
+							  	<b>Kita Say</b>, HK Director
+							</p>
+						</div>	
+					</div>
+					<div class="reviews-slider-item text-center">
+						<img class="img-circle center-block" src="img/avatar-1.jpg" alt="Angelina">
+						<div class="reviews-slider-shadow">
+							<p class="reviews-slider-text">
+								“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+							</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<p class="reviews-slider-author">
+							  	<b>Kita Say</b>, HK Director
+							</p>
+						</div>	
+					</div>
+					<div class="reviews-slider-item text-center">
+						<img class="img-circle center-block" src="img/avatar-2.jpg" alt="Brad">
+						<div class="reviews-slider-shadow">
+							<p class="reviews-slider-text">
+								“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+							</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<p class="reviews-slider-author">
+							  	<b>Kita Say</b>, HK Director
+							</p>
+						</div>	
+					</div>
+					<div class="reviews-slider-item text-center">
+						<img class="img-circle center-block" src="img/avatar-3.jpg" alt="Ьarie">
+						<div class="reviews-slider-shadow">
+							<p class="reviews-slider-text">
+								“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”
+							</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<p class="reviews-slider-author">
+							  	<b>Kita Say</b>, HK Director
+							</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col section-head text-center">
+					<h2>
+						<span>Team</span> Chinen & Skills
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+					</p>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<a href="#0" class="footer-btn cd-btn" id="modal-trigger" data-type="cd-modal-trigger">
+						Contact Us
+					</a>
+				</div>	
+			</div>
+		</div>
+	</footer>
+<!-- Process Modal -->
+	<!-- arcticModal 1 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="process-modal1">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 1
+	    </div>
+	</div>
+	<!-- arcticModal 2 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="process-modal2">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 2
+	    </div>
+	</div>
+	<!-- arcticModal 3 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="process-modal3">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 3
+	    </div>
+	</div>
+	<!-- arcticModal 4 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="process-modal4">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 4
+	    </div>
+	</div>
+
+<!-- Works Modal -->
+	<!-- arcticModal 1 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal1">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 1
+	    </div>
+	</div>
+	<!-- arcticModal 2 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal2">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 2
+	    </div>
+	</div>
+	<!-- arcticModal 3 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal3">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 3
+	    </div>
+	</div>
+	<!-- arcticModal 4 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal4">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 4
+	    </div>
+	</div>
+	<!-- arcticModal 5 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal5">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 5
+	    </div>
+	</div>
+	<!-- arcticModal 6 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal6">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 6
+	    </div>
+	</div>
+	<!-- arcticModal 7 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal7">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 7
+	    </div>
+	</div>
+	<!-- arcticModal 8 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal8">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 8
+	    </div>
+	</div>
+	<!-- arcticModal 9 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="work-modal9">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 9
+	    </div>
+	</div>
+
+<!-- Services Modals -->
+	<!-- arcticModal 1 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="services-modal1">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 1
+	    </div>
+	</div>
+	<!-- arcticModal 2 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="services-modal2">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 2
+	    </div>
+	</div>
+	<!-- arcticModal 3 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="services-modal3">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 3
+	    </div>
+	</div>
+	<!-- arcticModal 4 -->
+	<div style="display: none;">
+	    <div class="box-modal" id="services-modal4">
+	        <div class="box-modal_close arcticmodal-close">&times;</div>
+	        Модальное окно 4
+	    </div>
+	</div>
+
+
+	<!-- Modals -->
+	<!-- <div id="popup-1" class="popup-overlay">
+		<div class="popup">
+			<a class="popup-close" href="#close">&times;</a>
+		</div>
+	</div> -->
+	
+	<!-- Modals2 -->
+	<div class="cd-modal" data-modal="modal-trigger">
+		<div class="cd-svg-bg" 
+		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+				<title>SVG Modal background</title>
+				<path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+				<path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+				<path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+			</svg>
+		</div>
+
+		<div class="cd-modal-content">
+			<p>
+				Здесь будут контакты
+			</p>
+		</div> <!-- cd-modal-content -->
+
+		<a href="#0" class="modal-close">Close</a>
+	</div> <!-- cd-modal -->
+
+	<div class="cd-cover-layer">
+	</div> <!-- .cd-cover-layer -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/16b4bb9bff.js" crossorigin="anonymous"></script>
+	<script src="slick/slick.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="modal/main.js"></script>
+	<script src="modal/snap.svg-min.js"></script>
+	<script src="arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
